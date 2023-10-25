@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Binary</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <body class= "body">
+  <div class= 'navbar' >
+   <h1> Binary Conversions</h1>
+    <ul>
+      <li class= "li2"><a href="index.html">Home</a></li>
+      <li class= "li2"><a href="decimal.html">Decimal Conversions</a></li>
+      <li class= "li2"><a href="binary.html">Binary Conversions</a></li>
+      <li class= "li2"><a href="hex.html">Hexadecimal Conversions</a></li>
+    </ul>
+  </div>
+    <div class="main">
+    <h2> What Is Binary? </h2>
+    <p>
+        Binary is a base-2 numeral system, meaning it has only two digits: 0 and 1. 
+        
+      This is in contrast to our familiar decimal system, which is base-10 and has 
+        ten digits (0 through 9). Binary is the cornerstone of all digital computing, 
+        as it's the most straightforward way to represent the on/off states of 
+        electronic switches within a computer's circuitry.
+    </p>
+    <hr>
+
+    <h2> Why Do We Use Binary? </h2>
+     <p>
+        Computers use binary because electronic components can easily distinguish 
+        between two voltage levels, representing 0 and 1.
+       
+       By organizing data in this 
+        binary format, computers can perform complex calculations, store information, 
+        and communicate with other digital devices. To work effectively with computers 
+        and understand the processes that occur inside them, you must be familiar with 
+        binary.
+    </p>
+    <hr>
+    <h2> Basic Binary Conversions</h2>
+    <p>
+         <b> 1. Decimal to Binary:</b>
+      </p>
+     <ol class="steps">
+          <li class="li3">Divide the decimal number by 2. </li>
+          <li class="li3"> Record the remainder. </li>
+          <li class="li3"> Continue dividing the quotient by 2 until it reaches 0, recording the remainders each time. </li>
+          <li class="li3"> The binary representation is the sequence of remainders in reverse order. </li>
+      </ol>
+    
+         <p><b>Example:</b>
+         Convert 10 (decimal) to binary:
+         10 ÷ 2 = 5, remainder 0
+         5 ÷ 2 = 2, remainder 1
+         2 ÷ 2 = 1, remainder 0
+         1 ÷ 2 = 0, remainder 1
+
+        So, 10 (decimal) is 1010 in binary.
+         </p>
+      <p>
+       <b> 2. Binary to Decimal:</b> 
+      </p>
+     <ol class="steps">
+        <li class="li3"> Read the binary number from right to left. </li>
+        <li class="li3"> Write down the binary number. </li>
+        <li class="li3"> Assign a place value to each digit, starting from 1 for the rightmost digit and doubling it as you move left. </li>
+        <li class="li3">Multiply each digit by its corresponding place value.</li>
+        <li class="li3"> Sum up all the results to get the decimal equivalent. </li>
+     </ol>
+  
+      <p>
+         <b>Example:</b>
+         Convert 1010 (binary) to decimal:
+          0 * 1 + 1 * 2 + 0 * 4 + 1 * 8 = 0 + 2 + 0 + 8 = 10 (decimal)</p>
+    </div>
+  </body>

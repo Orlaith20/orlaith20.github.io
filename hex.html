@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hexadecimal</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <body class="body">
+    <div class= "navbar">
+    <h1>Hexadecimal (Hex) Conversions</h1>
+    <ul>
+      <li class= "li2"><a href="index.html">Home</a></li>
+      <li class= "li2"><a href="decimal.html">Decimal Conversions</a></li>
+      <li class= "li2"><a href="binary.html">Binary Conversions</a></li>
+      <li class= "li2"><a href="hex.html">Hexadecimal Conversions</a></li>
+    </ul>
+    </div>
+    <div class= "mainhex">
+    <h2>What Is Hexadecimal Conversion?</h2>
+    <p>Hexadecimal (often abbreviated as "hex") is a base-16 number system that is commonly used in computer science and programming. It's a way of representing numbers using 16 different symbols: 0-9 for values 0 to 9 and A-F (or a-f) for values 10 to 15. Hexadecimal is used because it's a convenient way to represent binary data in a more human-readable format, and it's often used for tasks like color representation, memory addresses, and encoding.</p>
+      <hr>
+    <h2>Basic Hexadecimal Conversions</h2>
+    
+            <h3>Decimal to Hexadecimal</h3>
+            <p>To convert a decimal number to hexadecimal, you can use the following method:</p>
+            <ul style= "font-size: 20px; color:white; font-family: courier new;">
+                <li>Divide the decimal number by 16.</li>
+                <li>Write down the remainder (in hexadecimal form if it's greater than 9, e.g., 10 becomes A, 11 becomes B, and so on).</li>
+                <li>Continue dividing the quotient until it becomes zero.</li>
+                <li>Write down the remainders in reverse order to get the hexadecimal equivalent.</li>
+            </ul>
+            <p>Let's convert 255 to hexadecimal:</p>
+            <ol style= "font-size: 20px; color:white; font-family: courier new;">
+                <li>255 divided by 16 is 15 with a remainder of 15. In hexadecimal, 15 is represented as F.</li>
+                <li>15 divided by 16 is 0 with a remainder of 15, which is also F.</li>
+            </ol>
+            <p>So, 255 in decimal is FF in hexadecimal.</p>
+      <hr>
+            <h3>Hexadecimal to Decimal</h3>
+            <p>To convert a hexadecimal number to decimal, you can use the following method:</p>
+            <ol style= "font-size: 20px; color:white; font-family: courier new;">
+                <li>Start from the rightmost digit (the least significant digit) and assign a decimal value to it (0-9 for 0-9 and 10-15 for A-F).</li>
+                <li>Multiply this value by 16 to the power of its position (0 for the rightmost, 1 for the next, 2 for the one after that, and so on).</li>
+                <li>Sum up the results for all digits.</li>
+            </ol>
+            <p>Let's convert 1A3 to decimal:</p>
+            <ol style= "font-size: 20px; color:white; font-family: courier new;">
+                <li>3 is in the rightmost position, so it's 3 * 16^0 = 3 * 1 = 3.</li>
+                <li>A (which is 10 in decimal) is in the middle, so it's 10 * 16^1 = 10 * 16 = 160.</li>
+                <li>1 is in the leftmost position, so it's 1 * 16^2 = 1 * 256 = 256.</li>
+                <li>Add them up: 3 + 160 + 256 = 419.</li>
+                <li>So, 1A3 in hexadecimal is equal to 419 in decimal.</li>
+              </ol>
+      <hr>
+            <h3>Hexadecimal to Binary</h3>
+            <p>Converting from hexadecimal to binary is relatively straightforward because each hexadecimal digit directly maps to a 4-bit binary sequence.</p>
+            <p>For example, let's convert B4 to binary:</p>
+            <ol style= "font-size: 20px; color:white; font-family: courier new;">
+                <li>B corresponds to 1011 in binary.</li>
+                <li>4 corresponds to 0100 in binary.</li>
+            </ol>
+            <p>So, B4 in hexadecimal is 101100 in binary.</p>
+       <hr>
+            <h3>Binary to Hexadecimal</h3>
+            <p>To convert binary to hexadecimal, group the binary digits into sets of 4 (starting from the right) and then convert each set to its hexadecimal equivalent.</p>
+            <p>Let's convert 110110101111 to hexadecimal:</p>
+            <ol style= "font-size: 20px; color:white; font-family: courier new;">
+                <li>1101 corresponds to D.</li>
+                <li>1010 corresponds to A.</li>
+                <li>1011 corresponds to B.</li>
+            </ol>
+            <p>So, 110110101111 in binary is DBA in hexadecimal.</p>
+     
+    </div>
+  </body>
+  </html>
